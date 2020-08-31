@@ -1,3 +1,4 @@
 class Tadpole < ActiveRecord::Base
-  # code goes here
+  belongs_to :frog
+  belongs_to :pond, foreign_key: "frog_id"
 end
